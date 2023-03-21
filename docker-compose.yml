@@ -3,6 +3,6 @@ services:
   app:
     container_name: app
     build: .
-    image: projetodevsecops
+    image: projetodevsecopsvulneravel
     ports:
       - "3000:3000"
