@@ -1,0 +1,31 @@
+{
+  "name": "projetosrc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+<<<<<<< HEAD
+    "bcrypt": "^4.1.0",
+    "dotenv": "^12.0.3",
+    "express": "^3.18.2",
+=======
+    "bcrypt": "5.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+>>>>>>> ce0a1ead3182758e8c2a27ef0e228cee39be1387
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^4.0.2",
+    "supertest": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.21"
+  }
+}
