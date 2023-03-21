@@ -68,7 +68,7 @@ jobs:
           scan_mode: "baseline"
           target_url: "https://dwtwut-3000.csb.app/"
 
-  deploy-:
+  deploy-t:
     needs: [teste-unit, SAST-njsscan-patterns, DAST-SOOS, SAST-snyk-dependencies]
     runs-on: ubuntu-latest
     steps:
