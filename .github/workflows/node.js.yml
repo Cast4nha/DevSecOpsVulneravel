@@ -64,9 +64,9 @@ jobs:
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: "DevSecOps"
+          project_name: "DevSecOpsVulneravel"
           scan_mode: "baseline"
-          target_url: "https://dwtwut-3000.csb.app/"
+          target_url: "https://i444jx-3000.csb.app/"
 
   deploy-t:
     needs: [teste-unit, SAST-njsscan-patterns, DAST-SOOS, SAST-snyk-dependencies]
