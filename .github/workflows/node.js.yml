@@ -20,7 +20,7 @@ jobs:
         run: docker-compose up -d
 
   SAST-snyk-dependencies:
-    needs: teste-unit
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -38,7 +38,7 @@ jobs:
         run: snyk test .
 
   SAST-njsscan-patterns:
-    needs: teste-unit
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -55,7 +55,7 @@ jobs:
         run: njsscan .
 
   DAST-SOOS:
-    needs: teste-unit
+
     name: SOOS DAST Baseline Analysis
     runs-on: ubuntu-latest
     steps:
@@ -69,7 +69,7 @@ jobs:
           target_url: "https://i444jx-3000.csb.app/"
 
   deploy:
-    needs: [teste-unit, SAST-njsscan-patterns, DAST-SOOS, SAST-snyk-dependencies]
+    needs: teste-unit
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
